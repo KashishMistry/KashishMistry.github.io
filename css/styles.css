@@ -19,7 +19,7 @@ html {
     box-sizing: inherit;
 }
 body {
-    color: whitesmoke;
+    color: #500808;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -66,6 +66,7 @@ a:hover {
 -----------------------------*/
 header {
     background-color: #0D1B1E;
+    color: whitesmoke;
 }
 
 
@@ -113,4 +114,5 @@ header {
 -----------------------------*/
 footer {
     background-color: #0D1B1E;
+    color: whitesmoke;
 }
