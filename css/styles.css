@@ -1,6 +1,7 @@
 /* 
 COLORS
 - Dark Jungle Green (very dark green, almost black): #0D1B1E
+- Umber: #5D5341
 - Khaki Web (rosy beige): #C1AD9C
 - Rosy Brown: #BF8B85
 - Antique Brass: #B68B75
@@ -78,6 +79,12 @@ header {
     background-color: #0D1B1E;
     color: whitesmoke;
 }
+
+/* Skills
+-----------------------------*/
+.skills{
+    background-color: #5D5341;
+}
 .skill-btn {
     border-style: solid;
     color: whitesmoke;
@@ -95,7 +102,6 @@ header {
     list-style-type: none;
     padding: 0;
 }
-
 
 /* Projects
 -----------------------------*/
