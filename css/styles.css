@@ -73,6 +73,26 @@ h3 {
     margin: 0;
 }
 
+/* Aside
+-----------------------------*/
+.to-top {
+    background-color: whitesmoke;
+    border-radius: 50%;
+    color: #0D1B1E;
+    position: fixed;
+    bottom: 15%;
+    right: 10%; 
+    border: none;
+}
+.to-top a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
 /* Profile
 -----------------------------*/
 header {
@@ -95,7 +115,7 @@ header {
     padding: 8px;
     display: inline-block;
     margin: 6px;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
 }
 .skill-list {
@@ -172,7 +192,6 @@ footer {
         column-gap: 30px;
     }
 }
-
 @media screen and (min-width:600px){
     .contact-list{
         display: flex;
@@ -195,5 +214,10 @@ footer {
     }
     .wrap-content {
         width: 92%;
+    }
+}
+@media screen and (max-width:1100px){
+    .to-top{
+        right: 5%
     }
 }
