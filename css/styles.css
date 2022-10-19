@@ -1,14 +1,16 @@
 /* 
-COLORS
-- Dark Jungle Green (very dark green, almost black): #0D1B1E
-- Umber: #5D5341
-- Khaki Web (rosy beige): #C1AD9C
-- Rosy Brown: #BF8B85
-- Antique Brass: #B68B75
-- Camel: #AD8A64
-- Ash Gray: #A1B0AB
+    TEXT
+    - #0D1B1E: Very Dark Green
+    - whitesmoke
 
-https://coolors.co/17382d-b5fed9-98cbb4-8c6057-846a6a */
+    BACKGROUND
+    - #C5D289: Sage Green
+    - #F1FFFA: Mint Green
+    - #B3B0BF: Light Purple
+    - #b7d3d3: Light Blue
+    - #B2AC88: Another Sage Green
+
+*/
 
 
 /* Global Styles
@@ -26,6 +28,21 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.5;
+}
+nav {
+    background-color: whitesmoke;
+    color:#0D1B1E;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    border: none;
+    padding-right: 20px;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-flex;
 }
 h1, h2 {
     font-family: 'Kalam', cursive;
@@ -72,11 +89,17 @@ h3 {
 .item-style h3 ~ p {
     margin: 0;
 }
+table {
+    margin-top: 16px;
+}
+th {
+    font-size: large;
+}
 
 /* Aside
 -----------------------------*/
 .to-top {
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 50%;
     color: #0D1B1E;
     position: fixed;
@@ -86,7 +109,7 @@ h3 {
 }
 .to-top a {
     display: block;
-    padding: 12px;
+    padding: 16px;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -103,17 +126,16 @@ header {
 /* Skills
 -----------------------------*/
 .skills{
-    background-color: #5D5341;
+    background-color: #C5D289;
 }
 .skill-btn {
-    border-style: solid;
-    color: whitesmoke;
-    text-decoration: none;
-    border-color: whitesmoke;
-    border-width: normal;
+    border-style: dashed;
+    border-width: thin;
+    font-style: italic;
+    color: #0D1B1E;
+    border-color: #0D1B1E;
     border-radius: 6px;
     padding: 8px;
-    display: inline-block;
     margin: 6px;
     display: inline-flex;
     justify-content: center;
@@ -123,17 +145,42 @@ header {
     padding: 0;
 }
 
+/* Work Experience
+-----------------------------*/
+.work-exp {
+    background-color: #F1FFFA;
+}
+
+/* Extracurricular Experience
+-----------------------------*/
+.extra-exp {
+    background-color: #B3B0BF;
+}
+
 /* Projects
 -----------------------------*/
 .projects {
-    background-color: #C1AD9C;
+    background-color: #b7d3d3;
 }
 .project-item {
     overflow: hidden;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 .project-item h3 {
     margin-top: 0;
+}
+.project-skill ul {
+    margin-top: 0;
+    justify-content: left;
+}
+.project-skill ul li {
+    padding: 5px;
+    border-style: dashed;
+    border-width: thin;
+    font-style: italic;
+    color: #0D1B1E;
+    border-color: #0D1B1E;
 }
 .border-between {
     margin-top: 10px;
@@ -141,25 +188,24 @@ header {
     border-width: 2px;
 }
 
-/* Work Experience
------------------------------*/
-.work-exp {
-    background-color: #BF8B85;
-}
-
-/* Extracurricular Experience
------------------------------*/
-.extra-exp {
-    background-color: #B68B75;
-}
-
 /* Education
 -----------------------------*/
-.edu {
-    background-color: #AD8A64;
+.header-edu {
+    text-align: center;
 }
-.ital {
-    font-style: italic;
+.header-edu h3 {
+    margin-top: 0;
+}
+.header-edu p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.edu {
+    background-color: #B2AC88;
+}
+.year {
+    text-align: center;
+    width: 30%;
 }
 
 /* Contact Info
