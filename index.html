@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kashish Mistry Portfolio</title>
+    <title>Kashish Mistry</title>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -16,6 +16,14 @@
       ---------------------------------------- -->
       <header>
         <div class="wrap-content">
+
+          <nav role="navigation" aria-label="main menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pages/education.html">Education</a></li>
+              <li><a href="pages/projects.html">Projects</a></li>
+            </ul>
+          </nav>
 
           <h1>Kashish Mistry</h1>
           <h2>Computer Engineering @ University of Toronto</h2>
@@ -35,9 +43,10 @@
           <ul class="skill-list"> 
             <li class="skill-btn">C++</li>
             <li class="skill-btn">C</li>
+            <li class="skill-btn">OOP</li>
             <li class="skill-btn">HTML</li>
             <li class="skill-btn">CSS</li>
-            <li class="skill-btn">JavaScript</li>
+            <li class="skill-btn">UI/UX Design</li>
             <li class="skill-btn">Figma</li>
             <li class="skill-btn">Research</li>
           </ul>
@@ -50,37 +59,6 @@
             <li class="skill-btn">Initiative</li>
           </ul>
         </div>
-      </section>
-
-      <!-- Projects
-      ---------------------------------------- -->
-      <section class="projects">
-
-        <div class="wrap-content">
-          <h2>Featured Projects</h2>
-          <!-- Project Block -->
-          <section class="project-item">
-            <img src="images/code-img.png" alt="Picture of code used for this website.">
-            <h3>This Web Portfolio!</h3>
-            <p>I'm continuously updating this web portfolio to develop and showcase my skills in HTML5 and CSS. 
-              I have integrated responsive and accesible web design and layouts to ensure this webpage is functional and accesible for all users.
-            </p>
-            <a href="https://github.com/KashishMistry/KashishMistry.github.io" class="ext-btn" target="_blank">View GitHub Page</a>
-          </section>
-          <div class="border-between"></div>
-
-          <section class="project-item">
-            <img src="images/radio-img.jpg" alt="Photograph of printed circuit board from project.">
-            <h3>Demodulator - Software-Defined Radio Transmitter</h3>
-            <p>Through ECE295: Hardware Communication and Design, my team and I built a Demodulator and Audio Amplifier as a subsystem of 
-              a Software-Defined Radio Transmitter (SDR). We successfully designed and assembled the printed circuit board (PCB) to demodulate
-              AM and SSB signals and passed all functionality tests.
-            </p>
-          </section>
-          <div class="border-between"></div>
-        </div>
-
-        <!-- End Projects -->
       </section>
 
       <!--  Work Experience  
@@ -122,6 +100,17 @@
           <h2>Extracurricular Experience</h2>
 
           <!-- Extracurriculars block -->
+          <section class="exp-item">
+            <div class="exp-details">
+              <h3>Consulting Associate</h3>
+              <p>University of Toronto Consulting Association</p>
+              <p>Oct 2022 - Present</p>
+            </div>
+            <div class="exp-summary">
+            </div>
+          </section>
+          <div class="border-between"></div>
+
           <section class="exp-item">
             <div class="exp-details">
               <h3>App Developer</h3>
@@ -197,25 +186,6 @@
 
         </div>
         <!-- End Extracurriculars. -->
-      </section>
-
-      <!-- Education
-       ---------------------------------------- -->
-      <section class="edu">
-
-        <div class="wrap-content item-style">
-          <h2>Education</h2>
-
-          <section>
-            <h3>University of Toronto</h3>
-            <p>Bachelor's of Applied Science in Engineering - Computer Engineering: 2020 - 2024</p>
-            <p>PEY Co-op Program</p>
-            <p>Relevant Courses: <span class="ital">Programming Fundamentals (C++), Computer Fundamentals (C), Computer Organization (Verilog, ARM Assembly),
-              Algorithms & Data Structures, Operating&nbsp;Systems, Introduction to Databases (SQL) </span>
-            </p>
-          </section>
-        </div>
-        <!-- End Schools. -->
       </section>
 
       <!-- Contact
