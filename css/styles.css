@@ -104,7 +104,8 @@ th {
 /* Profile
 -----------------------------*/
 header {
-    background-color: #0D1B1E;
+    background-image: linear-gradient(rgba(13, 27, 30, 0.75), rgba(13, 27, 30, 0.75)), url('../images/mountains-header.JPG');
+    background-position: 0px 50%;
     color: whitesmoke;
 }
 .navbar {
