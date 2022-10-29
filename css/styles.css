@@ -74,12 +74,6 @@ h3 {
 .item-style h3 ~ p {
     margin: 0;
 }
-table {
-    margin-top: 16px;
-}
-th {
-    font-size: large;
-}
 
 /* Aside
 -----------------------------*/
@@ -113,6 +107,9 @@ header {
     background-color: whitesmoke;
     color:#0D1B1E;
     border: none;
+    position: fixed;
+    top: 0;
+    width: 100%
 }
 .navbar ul {
     list-style-type: none;
@@ -127,7 +124,7 @@ header {
     text-decoration: none; 
 }
 .navbar a:hover {
-    background: #C5D289;
+    background: #CBDEF1;
     text-decoration: none;
     border-style: none;
 }
@@ -157,13 +154,13 @@ header {
 /* Extracurricular Experience
 -----------------------------*/
 .extra-exp {
-    background-color: #B3B0BF;
+    background-color: #D6EEFF;
 }
 
 /* Projects
 -----------------------------*/
 .projects {
-    background-color: #b7d3d3;
+    background-color: #CBDEF1;
 }
 .project-item {
     overflow: hidden;
@@ -192,7 +189,16 @@ header {
     margin-bottom: 0;
 }
 .edu {
-    background-color: #B2AC88;
+    background-color: #D1E6F8;
+}
+table {
+    margin-top: 16px;
+}
+th {
+    font-size: large;
+}
+th, td {
+    border-bottom: 1px solid #0D1B1E;
 }
 .subject-area {
     text-align: center;
@@ -202,7 +208,8 @@ header {
 /* Contact Info
 -----------------------------*/
 footer {
-    background-color: #0D1B1E;
+    background-image: linear-gradient(rgba(13, 27, 30, 0.75), rgba(13, 27, 30, 0.75)), url('../images/mountains-header.JPG');
+    background-position: 0px 100%;
     color: whitesmoke;
 }
 .contact-list {
