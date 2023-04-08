@@ -1,267 +1,129 @@
-/* 
-    TEXT
-    - #0D1B1E: Very Dark Green
-    - whitesmoke
-
-    BACKGROUND
-    - #C5D289: Sage Green
-    - #F1FFFA: Mint Green
-    - #B3B0BF: Light Purple
-    - #b7d3d3: Light Blue
-    - #B2AC88: Another Sage Green
-
-*/
-
-
-/* Global Styles
------------------------------*/
+/*----GLOBAL STYLES----*/
 html {
     box-sizing: border-box;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
-body {
-    color: #0D1B1E;
+body{
+    background-color: rgb(240, 240, 240);
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
-h1, h2 {
-    font-family: 'Kalam', cursive;
-    text-align: center;
-}
-h1 {
-    font-size: 45px;
-}
-h2 {
-    margin: 0;
-    font-size: 35px;
-    font-weight: 400;
-}
-img {
-    width: 300px;
-}
-.ext-btn {
-    background-color: whitesmoke;
-    color: #0D1B1E;
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 4px;
-    display: inline-block;
-}
-.ext-btn:hover {
-    background: rgba(245, 245, 245, 0.75);
-    text-decoration: none;
-    border-style: dashed;
-    border-color: rgba(161, 176, 171, 0.75);
-    border-width: thin;
-}
 .wrap-content {
-    max-width: 850px; /* ensures the width can decrease for smaller screens */
+    max-width: 1120px; /* ensures the width can decrease for smaller screens */
     width: 85%; /* ensures the content only occupies 85% of the width, leaving space around the edges */
-    margin: 0 auto;
-    padding: 60px;
+    margin: 56px auto;
+    padding: 40px;
+    box-shadow: -0.3em -0.3em 1em rgb(210, 210, 210), 0.3em 0.3em 1em rgb(210, 210, 210);
 }
-h3 {
+.wrap-content p {
+    font-size: larger;
+}
+.h2 {
+    font-size: large;
+}
+.bubble {
+    margin: 20px;
+    padding: 15px;
+    box-shadow: 0 -0.3em 1em #ffffff, 0.3em 0.3em 1em rgb(210, 210, 210);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.bubble h4 {
+    margin-top: 0;
+}
+.bubble p{
     margin-bottom: 0;
 }
-.item-style h3 + p {
-    font-style: italic;
+.section {
+    color: #707070	;
 }
-.item-style h3 ~ p {
-    margin: 0;
+.description {
+    font-size: medium !important;
 }
-
-/* Aside
------------------------------*/
-.to-top {
-    background-color: lightgrey;
-    border-radius: 50%;
-    color: #0D1B1E;
-    position: fixed;
-    bottom: 15%;
-    right: 10%; 
-    border: none;
-}
-.to-top a {
-    display: block;
-    padding: 16px;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
+.date {
+    font-size: medium !important;
+    margin-top: 0;
 }
 
-/* Profile
------------------------------*/
-header {
-    background-image: linear-gradient(rgba(13, 27, 30, 0.75), rgba(13, 27, 30, 0.75)), url('../images/mountains-header.JPG');
-    background-position: 0px 50%;
-    color: whitesmoke;
-}
-.navbar {
-    overflow: hidden;
+/*----HEADER STYLES----*/
+.header {
     background-color: whitesmoke;
-    color:#0D1B1E;
+    color: #707070	;
+}
+/*.navbar {
+    overflow: hidden;
     border: none;
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
 }
 .navbar ul {
     list-style-type: none;
     text-align: center;
     display: flex;
     justify-content: center;
+}*/
+.left-icon {
+    justify-content: left;
 }
-.navbar a {
-    padding: 15px;
-    margin-left: 12px;
-    margin-right: 12px;
-    text-decoration: none; 
+.intro {
+    display: flex;
 }
-.navbar a:hover {
-    background: #CBDEF1;
-    text-decoration: none;
-    border-style: none;
-}
-.skill-list {
-    list-style-type: none;
-    padding: 0;
-}
-.skill-btn {
-    border-style: dashed;
-    border-width: thin;
-    font-style: italic;
-    color: #0D1B1E;
-    border-color: #0D1B1E;
-    border-radius: 6px;
-    padding: 8px;
-    margin: 6px;
-    display: inline-flex;
+.intro img {
+    width: 300px;
 }
 
+/*----EDUCATION STYLES----*/
 
-/* Work Experience
------------------------------*/
-.work-exp {
-    background-color: #F1FFFA;
+/*----WORK STYLES----*/
+.work img {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 250px;
 }
-
-/* Extracurricular Experience
------------------------------*/
-.extra-exp {
-    background-color: #D6EEFF;
-}
-
-/* Projects
------------------------------*/
-.projects {
-    background-color: #CBDEF1;
-}
-.project-item {
-    overflow: hidden;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-.project-item h3 {
-    margin-top: 0;
-}
-.border-between {
-    margin-top: 10px;
-    border-bottom: 1px solid rgba(13, 27, 30, 0.25);
-    border-width: 2px;
-}
-
-/* Education
------------------------------*/
-.header-edu {
-    text-align: center;
-}
-.header-edu h3 {
-    margin-top: 0;
-}
-.header-edu p {
-    margin-top: 0;
+.work h3 {
     margin-bottom: 0;
 }
-.edu {
-    background-color: #D1E6F8;
+
+/*----EXTRACURRICULAR STYLES----*/
+.extracurricular h3 {
+    margin-bottom: 0;
 }
-table {
-    margin-top: 16px;
+.utwind img {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 250px;
 }
-th {
-    font-size: large;
+.wise img {
+    width: 200px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
-th, td {
-    border-bottom: 1px solid #0D1B1E;
-}
-.subject-area {
-    text-align: center;
-    width: 30%;
+.engsoc img{
+    width: 130px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
-/* Contact Info
------------------------------*/
-footer {
-    background-image: linear-gradient(rgba(13, 27, 30, 0.75), rgba(13, 27, 30, 0.75)), url('../images/mountains-header.JPG');
-    background-position: 0px 100%;
-    color: whitesmoke;
+/*----PROJECT STYLES----*/
+.projects h3 {
+    margin-bottom: 0;
 }
-.contact-list {
-    list-style-type: none;
-    padding: 0;
+.blood-cell img{
+    width: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
-.contact-list a {
-    padding: 15px;
-    margin: 15px;
-    display: inline-block;
+.course-projects img {
+    width: 170px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-/* Media Queries
----------------------------*/
-@media screen and (min-width:1000px){
-    .project-item img {
-        float: left;
-        margin-right: 20px;
-    }
-    .exp-item {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 30px;
-    }
-}
-@media screen and (min-width:600px){
-    .contact-list{
-        display: flex;
-        justify-content: center;
-    }
-    .skill-list{
-        display: flex;
-        justify-content: left;
-    }
-}
-@media screen and (max-width:999px){
-    h1 {
-        font-size:35px;
-    }
-    h2 {
-        font-size:30px;
-    }
-    h1, h2 {
-        line-height: 1;
-    }
-    .wrap-content {
-        width: 92%;
-    }
-}
-@media screen and (max-width:1100px){
-    .to-top{
-        right: 5%
-    }
-}
+/*----MEDIA QUERIES----*/
