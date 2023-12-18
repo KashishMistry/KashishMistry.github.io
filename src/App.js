@@ -27,17 +27,18 @@ function Education() {
     <section className="education">
       <div className="wrap-content">
           <h2>Education.</h2>
-          <h3>Bachelor of Applied Science in Computer Engineering - University of Toronto</h3>
+          <h3>Bachelor of Applied Science in Computer Engineering, Minor in Artificial Intelligence Engineering <br></br> <i>University of Toronto</i></h3>
           <div className="bubble">
-              <h4>Current Coursework:</h4>
-              <p class="description">Applied Fundamentals of Deep Learning, Computer Networks I, 
-                  Introduction to Databases, Engineering Economic Analysis & Entrepreneurship,
-                  Terrestrial Energy Systems
+              <h4>Achievements:</h4>
+              <p class="description">
+                Ontario Professional Engineers Foundation for Education Undergraduate Scholarship, Colantonio Family Leadership Award, Dean's Honours List (Winter 2023, Fall 2020)
               </p>
           </div>
           <div className="bubble">
               <h4>Completed Relevant Coursework:</h4>
-              <p className="description">Operating Systems, Algorithms & Data Structures,
+              <p className="description">Applied Fundamentals of Deep Learning, Computer Networks I, 
+                  Introduction to Databases, Engineering Economic Analysis & Entrepreneurship, 
+                  Operating Systems, Algorithms & Data Structures,
                   Probability & Applications, Programming Fundamentals in C & C++, 
                   Computer Organization, Linear Algebra, Differential/Integral/Vector Calculus, 
                   Engineering Strategies & Practice
@@ -54,7 +55,21 @@ class Work extends React.Component {
 		this.state = { data: [] }
 	}
 
-  work_exp = [{"title": "Software Engineer Intern - RBC Amplify", 
+  work_exp = [{"title": "Software Developer Intern - Environment and Climate Change Canada", 
+                "date": "September 2023 - Present",
+                "description_one":"Developing a reusable and accessible open-source mapping platform using Vue.js, TypeScript, and ESRI Mapping API to present environmental data using interactive maps",
+                "description_two":"Developing a comprehensive inventory management tool from inception to full deployment using Microsoft Power Apps, optimizing inventory tracking and management processes for enhanced efficiency",
+                "description_three":"Leveraging Git for streamlined code collaboration and version control within cross-functional teams",
+                "logo": "eccc.png",
+                "alt":"Environment and Climate Change logo"},
+              {"title": "Research Student - Youth Climate Lab", 
+                "date": "August 2023 - Present",
+                "description_one":"Conducting an independent research project to investigate the implications of Artificial Intelligence (AI) on climate change, with a focus on ethical considerations, algorithm fairness, and carbon cost",
+                "description_two":"Will be publishing article on the ethical considerations of climate change artificial intelligence in Starfish Journal",
+                "description_three":"Developing an \"Earth and AI\" handbook to provide insights to the general public about the how AI will impact climate change",
+                "logo": "ycl.png",
+                "alt":"Youth Climate Lab logo"},
+              {"title": "Software Engineer Intern - RBC Amplify", 
                 "date": "May 2023 - August 2023",
                 "description_one":"Building a system using large-language models to automate data extraction from client documents to improve processes across all lines of business at RBC",
                 "description_two":"Developing a progressive user interface using React.js and Flask to improve employee experience",
@@ -101,7 +116,14 @@ class Extracurricular extends React.Component {
 		this.state = { data: [] }
 	}
 
-  extra_exp = [{"title":"Software Developer", 
+  extra_exp = [{"title":"Stories of WISE Editor - Women in Science and Engineering UofT", 
+                "date":"August 2023 - Present",
+                "description_one":"Debugged Fast API implementation associated with mobile app to receive data from wind turbine, resulting in data collection stability",
+                "description_two":"Employed critical thinking techniques to isolate and repair software design defects in both front and back-end source codes, improving application stability",
+                "logo": "wise.png",
+                "alt":"Women in Science and Engineering, University of Toronto logo",
+                "class":"wise"},
+              {"title":"Software Developer - UTWind", 
                 "date":"Sept 2022 - April 2023",
                 "description_one":"Debugged Fast API implementation associated with mobile app to receive data from wind turbine, resulting in data collection stability",
                 "description_two":"Employed critical thinking techniques to isolate and repair software design defects in both front and back-end source codes, improving application stability",
@@ -208,8 +230,8 @@ function App() {
       <Header />
       <Education />
       <Work />
-      <Extracurricular />
       <Projects />
+      <Extracurricular />
     </div>
   );
 }
