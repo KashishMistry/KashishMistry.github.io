@@ -9,8 +9,8 @@ function Header() {
             <div>
                 <h1>Hi, I'm Kashish. Computer Engineering student from the University of Toronto.</h1>
                 <p>Currently exploring all things software with a focus on computer networks, artificial intelligence,
-                    and data engineering. I have developed my skills through projects, labs, and extracurricular experience. 
-                    This summer, I am interning at RBC as a Software Engineer for the Amplify Innovation Program!
+                    and data engineering. I am currently interning at Environment and Climate Change Canada as a 
+                    Software Developer Intern.
                 </p>
             </div>
             <div>
