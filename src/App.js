@@ -12,11 +12,34 @@ function Header() {
                     and data engineering. I am currently interning at Environment and Climate Change Canada as a 
                     Software Developer Intern.
                 </p>
+                <div className='contact'>
+                  <div className='bubble'>
+                      <a href='mailto: kashish.mistry@mail.utoronto.ca'>
+                        <img style={{ width:40, height:40}} src="email.png" alt='Email icon'></img>
+                      </a>
+                  </div>
+                  <div className="bubble">
+                      <a href='tel: 647-629-6876'>
+                        <img style={{ width:40, height:40}} src="phone.png" alt='Phone icon'></img> 
+                      </a>
+                  </div>
+                  <div className='bubble'>
+                    <a href="https://www.linkedin.com/in/kashish-mistry/">
+                      <img style={{ width:40, height:40}} src="linkedin.png" alt='Github logo'></img>
+                    </a>
+                  </div>
+                  <div className='bubble'>
+                    <a href="https://github.com/KashishMistry">
+                    <img style={{ width:40, height:40}} src="githublogo.png" alt='Github logo'></img>
+                    </a>
+                  </div>
+                </div>
             </div>
             <div>
                 <img src="profile_pic.png" alt="Headshot of Kashish Mistry" />
             </div>
         </div>
+        
       </div>
     </header>
   );
@@ -29,12 +52,6 @@ function Education() {
           <h2>Education.</h2>
           <h3>Bachelor of Applied Science in Computer Engineering, Minor in Artificial Intelligence Engineering <br></br> <i>University of Toronto</i></h3>
           <div className="bubble">
-              <h4>Achievements:</h4>
-              <p class="description">
-                Ontario Professional Engineers Foundation for Education Undergraduate Scholarship, Colantonio Family Leadership Award, Dean's Honours List (Winter 2023, Fall 2020)
-              </p>
-          </div>
-          <div className="bubble">
               <h4>Completed Relevant Coursework:</h4>
               <p className="description">Applied Fundamentals of Deep Learning, Computer Networks I, 
                   Introduction to Databases, Engineering Economic Analysis & Entrepreneurship, 
@@ -42,6 +59,12 @@ function Education() {
                   Probability & Applications, Programming Fundamentals in C & C++, 
                   Computer Organization, Linear Algebra, Differential/Integral/Vector Calculus, 
                   Engineering Strategies & Practice
+              </p>
+          </div>
+          <div className="bubble">
+              <h4>Achievements:</h4>
+              <p class="description">
+                Ontario Professional Engineers Foundation for Education Undergraduate Scholarship, Colantonio Family Leadership Award, Dean's Honours List (Winter 2023, Fall 2020)
               </p>
           </div>
       </div>

@@ -47,6 +47,7 @@ body{
 }
 .description {
   font-size: medium !important;
+  text-align: left;
 }
 .date {
   font-size: medium !important;
@@ -79,6 +80,12 @@ body{
 }
 .intro img {
   width: 300px;
+}
+
+/*----CONTACT STYLES----*/
+.contact {
+  display: flex;
+  justify-content: center;
 }
 
 /*----EDUCATION STYLES----*/
