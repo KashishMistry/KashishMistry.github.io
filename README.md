@@ -1,5 +1,3 @@
 # Personal Website
 
-Created using React
-
-To be hosted using GitHub pages
+Created using React, HTML, CSS, and Github Pages.
